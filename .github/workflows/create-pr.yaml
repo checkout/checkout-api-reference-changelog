@@ -1,0 +1,16 @@
+name: Create Copy Action PR
+
+on:
+  push: 
+    branches: 
+        - 'copy-from-api-ref'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Create PR
+        env:
+            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+            gh pr create --title "Copy changelog from API Ref" --body "Automated PR for copying changelog updates" --head "copy-from-api-ref" --base main
