@@ -2,8 +2,9 @@
 
 | Date       | Description of change                                                                                                                               |
 |------------|-----------------------------------------------------------------------------------------------------------------------------------------------------|
-| 2023/10/10 | Update `currency` as optional when simulating issuing authorizations requests
-| 2023/10/03 | Add payment instrument ID to payout schedule request and response                                                                                      |
+| 2023/10/12 | Add examples of `currency` field to card metadata response                                                                                          |
+| 2023/10/10 | Update `currency` as optional when simulating issuing authorizations requests                                                                       |
+| 2023/10/03 | Add payment instrument ID to payout schedule request and response                                                                                   |
 | 2023/09/27 | Additional fixes to the swagger file                                                                                                                |
 | 2023/09/28 | Updated the description and maxlength of `Address.state` field                                                                                      |
 | 2023/09/22 | Update the description and summary for the endpoint to complete a session                                                                           |
