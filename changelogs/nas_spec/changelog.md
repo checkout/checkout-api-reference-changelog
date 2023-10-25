@@ -2,6 +2,7 @@
 
 | Date       | Description of change                                                                                                                               |
 |------------|-----------------------------------------------------------------------------------------------------------------------------------------------------|
+| 2023/10/13 | Add Network Tokens API                                                                                                                              |
 | 2023/10/12 | Add examples of `currency` field to card metadata response                                                                                          |
 | 2023/10/10 | Update `currency` as optional when simulating issuing authorizations requests                                                                       |
 | 2023/10/03 | Add payment instrument ID to payout schedule request and response                                                                                   |
