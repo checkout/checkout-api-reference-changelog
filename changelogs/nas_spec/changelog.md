@@ -2,6 +2,26 @@
 
 | Date       | Description of change                                                                                                                               |
 |------------|-----------------------------------------------------------------------------------------------------------------------------------------------------|
+| 2023/12/06 | Added regulated range and sub-product specific fields to card metadata response.                                                                    |
+| 2023/11/30 | Added `segment` to payment request                                                                                                                  |
+| 2023/11/29 | Added new object `Retry` to the payment request and response, as well as a new cancellation endpoint.                                               |
+| 2023/11/29 | Added `encrypted_card_number` to payment response card source                                                                                       |
+| 2023/11/29 | Add `local_schemes` to card metadata response and deprecate `scheme_local`                                                                          |
+| 2023/11/27 | Added compelling evidence object to the provide evidence object in the disputes.                                                                    |
+| 2023/11/24 | Add new GET Transaction By Id endpoint for Card Issuing                                                                                             |
+| 2023/11/23 | Add new roles for `Platforms` onboarding.                                                                                                           |
+| 2023/11/20 | Add Identity Verification documentation                                                                                                             |
+| 2023/11/16 | Add API reference for reserve rules                                                                                                                 |
+| 2023/11/16 | Fixed `Platforms` downgraded onboarding.                                                                                                            |
+| 2023/11/09 | Add `cvv` to token type dropdown.                                                                                                                   |
+| 2023/11/07 | Add `surcharge_amount` field in Payments                                                                                                            |
+| 2023/11/03 | Deprecate `default` flag on platforms payment instruments                                                                                           |
+| 2023/11/02 | Update `allow_payment_methods` values for Hosted Payments Page and Payment Links                                                                    |
+|            | Add `disabled_payment_methods` property to Hosted Payments Page and Payment Links                                                                   |
+| 2023/11/01 | Updated `risk.enabled` as optional when requesting a payment or payout                                                                              |
+| 2023/10/30 | Relax cvv validation for non-pci card-on-file flows to support hosted cvv                                                                           |
+| 2023/10/30 | Add additional authentication exemptions                                                                                                            |
+| 2023/10/25 | Remove `mandate_id` and `date_of_signature` from SEPAV4 required properties                                                                         |
 | 2023/10/13 | Add Network Tokens API                                                                                                                              |
 | 2023/10/12 | Add examples of `currency` field to card metadata response                                                                                          |
 | 2023/10/10 | Update `currency` as optional when simulating issuing authorizations requests                                                                       |
