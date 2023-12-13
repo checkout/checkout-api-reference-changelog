@@ -2,6 +2,7 @@
 
 | Date       | Description of change                                                                                                                               |
 |------------|-----------------------------------------------------------------------------------------------------------------------------------------------------|
+| 2023/12/11 | Added `scheme_metadata` block description to card metadata response.                                                                                |
 | 2023/12/06 | Added regulated range and sub-product specific fields to card metadata response.                                                                    |
 | 2023/11/30 | Added `segment` to payment request                                                                                                                  |
 | 2023/11/29 | Added new object `Retry` to the payment request and response, as well as a new cancellation endpoint.                                               |
