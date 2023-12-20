@@ -3,7 +3,7 @@
 | Date       | Description of change                                                                                                                   |
 |------------|-----------------------------------------------------------------------------------------------------------------------------------------|
 | 2023/11/21 | Added compelling evidence object to the provide evidence object in the disputes.                                                        |
-| 2023/07/03 | Removed `charge id`, `track id`, and `reference` from the Retrieve Events endpoint .                                                         |
+| 2023/07/03 | Removed `charge id`, `track id`, and `reference` from the Retrieve Events endpoint .                                                    |
 | 2023/06/26 | Added `optimization` object to Authentication request and responses                                                                     |
 | 2023/03/07 | Updated `recipient.account_number` max length to 34 and amended description                                                             |
 | 2023/03/08 | Added `Go` code samples for both ABC and NAS                                                                                            |
