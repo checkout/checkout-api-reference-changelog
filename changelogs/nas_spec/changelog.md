@@ -2,6 +2,7 @@
 
 | Date       | Description of change                                                                                                                               |
 |------------|-----------------------------------------------------------------------------------------------------------------------------------------------------|
+| 2023/12/27 | Restructured 3ds request details for integrated authentication.                                                                                     |
 | 2023/12/19 | Added `display_name` and `customer_retry` fields to Hosted Payments Page and Payment Links, and `giropay` to their supported payment methods.       |
 | 2023/12/14 | Renamed `issuer_name` to `issuing_bank` on FinancialAction response.                                                                                |
 | 2023/12/11 | Added `scheme_metadata` block description to card metadata response.                                                                                |
