@@ -2,6 +2,7 @@
 
 | Date       | Description of change                                                                                                                               |
 |------------|-----------------------------------------------------------------------------------------------------------------------------------------------------|
+| 2024/01/16 | Fixed CardPayoutActionsResponse details                                                                                                             |
 | 2024/01/11 | Amends the create session response. Adds Discover to the list of schemes in Standalone authentication.                                              |
 | 2023/12/27 | Restructured 3ds request details for integrated authentication.                                                                                     |
 | 2023/12/19 | Added `display_name` and `customer_retry` fields to Hosted Payments Page and Payment Links, and `giropay` to their supported payment methods.       |
