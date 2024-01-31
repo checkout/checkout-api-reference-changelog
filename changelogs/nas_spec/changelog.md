@@ -2,6 +2,7 @@
 
 | Date       | Description of change                                                                                                                               |
 |------------|-----------------------------------------------------------------------------------------------------------------------------------------------------|
+| 2024/01/23 | Adds the Payment Sessions API, used in the Payment Components payment flow.  
 | 2024/01/16 | Fixed CardPayoutActionsResponse details                                                                                                             |
 | 2024/01/11 | Amends the create session response. Adds Discover to the list of schemes in Standalone authentication.                                              |
 | 2023/12/27 | Restructured 3ds request details for integrated authentication.                                                                                     |
