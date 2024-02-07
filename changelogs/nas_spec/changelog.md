@@ -2,6 +2,8 @@
 
 | Date       | Description of change                                                                                                                               |
 |------------|-----------------------------------------------------------------------------------------------------------------------------------------------------|
+| 2024/02/06 | Added Sequra NAS Request and Response source.                                                                                                       |
+| 2024/01/31 | Fixed incremental authorization response details                                                                                                    |
 | 2024/01/23 | Adds the Payment Sessions API, used in the Payment Components payment flow.  
 | 2024/01/16 | Fixed CardPayoutActionsResponse details                                                                                                             |
 | 2024/01/11 | Amends the create session response. Adds Discover to the list of schemes in Standalone authentication.                                              |
