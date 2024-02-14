@@ -2,6 +2,8 @@
 
 | Date       | Description of change                                                                                                                               |
 |------------|-----------------------------------------------------------------------------------------------------------------------------------------------------|
+| 2024/02/13 | Added `challenge_notification_url` to NonHostedCompletionInfo                                                                                         |
+| 2024/02/12 | Added `card_wallet_type` to POST and GET response                                                                                                   |
 | 2024/02/06 | Added Sequra NAS Request and Response source.                                                                                                       |
 | 2024/01/31 | Fixed incremental authorization response details                                                                                                    |
 | 2024/01/23 | Adds the Payment Sessions API, used in the Payment Components payment flow.  
