@@ -2,6 +2,7 @@
 
 | Date       | Description of change                                                                                                                               |
 |------------|-----------------------------------------------------------------------------------------------------------------------------------------------------|
+| 2024/02/20 | Add `sepa` type to StoreInstrumentRequest and StoreInstrumentResponse                                                                               |
 | 2024/02/13 | Added `challenge_notification_url` to NonHostedCompletionInfo                                                                                         |
 | 2024/02/12 | Added `card_wallet_type` to POST and GET response                                                                                                   |
 | 2024/02/06 | Added Sequra NAS Request and Response source.                                                                                                       |
