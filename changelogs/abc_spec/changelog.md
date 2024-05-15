@@ -2,6 +2,8 @@
 
 | Date       | Description of change                                                                                                                   |
 |------------|-----------------------------------------------------------------------------------------------------------------------------------------|
+| 2023/03/27 | Removed `bic` as a field for creating a payment with `iDEAL` source type                                                                |
+| 2024/03/27 | Adds new `GET /disputes/{dispute_id}/evidence/submitted` endpoint, which enables you to retrieve a unique ID for a PDF file containing all the evidence submitted to represent a dispute case.                                   |
 | 2023/11/21 | Added compelling evidence object to the provide evidence object in the disputes.                                                        |
 | 2023/07/03 | Removed `charge id`, `track id`, and `reference` from the Retrieve Events endpoint .                                                    |
 | 2023/06/26 | Added `optimization` object to Authentication request and responses                                                                     |

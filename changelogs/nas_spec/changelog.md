@@ -1,235 +1,268 @@
 # Changelog
-
-| Date       | Description of change                                                                                                                               |
-|------------|-----------------------------------------------------------------------------------------------------------------------------------------------------|
-| 2024/02/20 | Add `sepa` type to StoreInstrumentRequest and StoreInstrumentResponse                                                                               |
-| 2024/02/13 | Added `challenge_notification_url` to NonHostedCompletionInfo                                                                                         |
-| 2024/02/12 | Added `card_wallet_type` to POST and GET response                                                                                                   |
-| 2024/02/06 | Added Sequra NAS Request and Response source.                                                                                                       |
-| 2024/01/31 | Fixed incremental authorization response details                                                                                                    |
-| 2024/01/23 | Adds the Payment Sessions API, used in the Payment Components payment flow.  
-| 2024/01/16 | Fixed CardPayoutActionsResponse details                                                                                                             |
-| 2024/01/11 | Amends the create session response. Adds Discover to the list of schemes in Standalone authentication.                                              |
-| 2023/12/27 | Restructured 3ds request details for integrated authentication.                                                                                     |
-| 2023/12/19 | Added `display_name` and `customer_retry` fields to Hosted Payments Page and Payment Links, and `giropay` to their supported payment methods.       |
-| 2023/12/14 | Renamed `issuer_name` to `issuing_bank` on FinancialAction response.                                                                                |
-| 2023/12/11 | Added `scheme_metadata` block description to card metadata response.                                                                                |
-| 2023/12/06 | Added regulated range and sub-product specific fields to card metadata response.                                                                    |
-| 2023/11/30 | Added `segment` to payment request                                                                                                                  |
-| 2023/11/29 | Added new object `Retry` to the payment request and response, as well as a new cancellation endpoint.                                               |
-| 2023/11/29 | Added `encrypted_card_number` to payment response card source                                                                                       |
-| 2023/11/29 | Add `local_schemes` to card metadata response and deprecate `scheme_local`                                                                          |
-| 2023/11/27 | Added compelling evidence object to the provide evidence object in the disputes.                                                                    |
-| 2023/11/24 | Add new GET Transaction By Id endpoint for Card Issuing                                                                                             |
-| 2023/11/23 | Add new roles for `Platforms` onboarding.                                                                                                           |
-| 2023/11/20 | Add Identity Verification documentation                                                                                                             |
-| 2023/11/16 | Add API reference for reserve rules                                                                                                                 |
-| 2023/11/16 | Fixed `Platforms` downgraded onboarding.                                                                                                            |
-| 2023/11/09 | Add `cvv` to token type dropdown.                                                                                                                   |
-| 2023/11/07 | Add `surcharge_amount` field in Payments                                                                                                            |
-| 2023/11/03 | Deprecate `default` flag on platforms payment instruments                                                                                           |
-| 2023/11/02 | Update `allow_payment_methods` values for Hosted Payments Page and Payment Links                                                                    |
-|            | Add `disabled_payment_methods` property to Hosted Payments Page and Payment Links                                                                   |
-| 2023/11/01 | Updated `risk.enabled` as optional when requesting a payment or payout                                                                              |
-| 2023/10/30 | Relax cvv validation for non-pci card-on-file flows to support hosted cvv                                                                           |
-| 2023/10/30 | Add additional authentication exemptions                                                                                                            |
-| 2023/10/25 | Remove `mandate_id` and `date_of_signature` from SEPAV4 required properties                                                                         |
-| 2023/10/13 | Add Network Tokens API                                                                                                                              |
-| 2023/10/12 | Add examples of `currency` field to card metadata response                                                                                          |
-| 2023/10/10 | Update `currency` as optional when simulating issuing authorizations requests                                                                       |
-| 2023/10/03 | Add payment instrument ID to payout schedule request and response                                                                                   |
-| 2023/09/27 | Additional fixes to the swagger file                                                                                                                |
-| 2023/09/28 | Updated the description and maxlength of `Address.state` field                                                                                      |
-| 2023/09/22 | Update the description and summary for the endpoint to complete a session                                                                           |
-| 2023/09/18 | Added `holding_currencies` back to `Platforms` section                                                                                              |
-| 2023/09/14 | Add `currency` field to card metadata response                                                                                                      |
-| 2023/09/07 | Fixed swagger file                                                                                                                                  |
-| 2023/09/07 | Update descriptions for `preferred_scheme` and `attempt_n3d`                                                                                        |
-| 2023/09/11 | Add Payment Plan Object PaymentRequest                                                                                                              |
-| 2023/09/11 | Remove Marketplace Object Payment and Capture Request and GET response                                                                              |
-| 2023/09/07 | Fixed swagger file                                                                                                                                  |
-| 2023/09/07 | Update descriptions for `preferred_scheme` and `attempt_n3d`                                                                                        |
-| 2023/09/07 | Update descriptions for `preferred_scheme` and `attempt_n3d`                                                                                        |
-|            | Removed `source.amount` from `CardPayoutRequest` object                                                                                             |
-| 2023/08/22 | Fixed files sub-domain and request examples.                                                                                                        |
-|            | Deprecate property `authentication_method` for the Standalone Sessions API                                                                          |
-| 2023/08/17 | Added new `error_codes`s for the Standalone Sessions API                                                                                            |
-| 2023/08/15 | Fixed missing property for US individuals                                                                                                           |
-| 2023/08/09 | Adding hosted onboarding flow as `beta`. Added examples for onboarding request from Platforms. Added new files endpoint for Platforms               |
-| 2023/08/05 | Add `withCurrencyAccountId` query parameter to get balances request.                                                                                |
-| 2023/07/28 | Matched `3ds.authentication_response` with that of the sessions response to provide more information about each code                                |
-| 2023/07/19 | Added new objects `AccountInfo`, `MerchantAuthenticationInfo`, to `3dsRequest`. Added new object `InitialAuthentication` to `3dsRequestThirdParty`. |
-|            | Added new object `ThreeDsRequestorAuthenticationInfo` to `3dsData`. Fixed typo in `CardholderAccountInfo` transactions_today field.                 |
-|            | Removed commas in `three_ds_requestor_authentication_info` object enums and removed `prior_transaction_reference` field                             |
-| 2023/07/18 | Remove `bank_code` from `SEPAV4` reference                                                                                                          |
-| 2023/03/14 | Added the available `product_type` options for `tamara` payment method                                                                              |
-| 2023/07/10 | Remove `Beta` tag from Financial Actions API                                                                                                        |
-| 2023/07/05 | Remove deprecated `instruments` endpoint from Platforms API                                                                                         |
-| 2023/07/04 | Add `currency` property to `TransferSource`                                                                                                         |
-| 2023/07/03 | Add `holding_currencies` property to sub-entity onboarding profile                                                                                  |
-| 2023/07/03 | Updated `processing-channel` type to `processing_channel` in Add/Update Workflow Condition                                                          |
-| 2023/06/28 | Added `InitialTransaction` to `SessionRequest`                                                                                                      |
-| 2023/06/28 | Added new `MerchantInitiated` channel type and new object `InitialTransaction`                                                                      |
-| 2023/06/28 | Added `account_holder` object to Giropay payment create request and get payment response                                                            |
-| 2023/06/26 | Added `optimization` object to Authentication request and responses                                                                                 |
-| 2023/06/21 | Added new card testing endpoint to simulate refunds for Issuing                                                                                     |
-| 2023/06/14 | Added new props in `CardholderAccountInfo` and `MerchantRiskInfo`, and new object `ThreeDsRequestorAuthenticationInfo`                              |
-| 2023/06/05 | Added LocalBillingDescriptor to NAS spec                                                                                                            |
-| 2023/05/31 | Removed Forex Quotes endpoint                                                                                                                       |
-| 2023/05/23 | Added new card testing endpoint to simulate clearing for Issuing                                                                                    |
-| 2023/05/17 | Added new card testing endpoints to simulate pre/incremental authorizations and reversals for Issuing                                               |
-| 2023/05/16 | Updated `sender.reference` minimum length for Card Payouts                                                                                          |
-| 2023/05/09 | Add `local_schemes` to response source and deprecate `scheme_local`                                                                                 |
-| 2023/04/21 | Remove `giropay` from Hosted Payments and Payment Links                                                                                             |
-| 2023/04/13 | Add `authentication_status_reason` to `3ds` object in the GET payment details response                                                              |
-| 2023/04/04 | Update conflict response for onboard sub entity operation to include ID                                                                             |
-| 2023/04/03 | Updated `payment_ip` to support IPv6 addresses                                                                                                      |
-| 2023/03/28 | Increased NAS `recipient.account_number` max length from 10 to 34                                                                                   |
-| 2023/04/03 | Added `if-match` header to `PlatformsPaymentInstrumentUpdate` for Integrated Platforms                                                              |
-| 2023/04/02 | Added `card_token` object to `PlatformsPaymentInstrument` for Integrated Platforms                                                                  |
-| 2023/03/30 | Updated Bank Payouts docs hyperlink                                                                                                                 |
-| 2023/03/23 | Remove `marketplace` from Hosted Payments and Payment Links                                                                                         |
-| 2023/03/22 | Adds API documentation for card issuing                                                                                                             |
-| 2023/03/21 | Modified `Standalone` API path to correctly point to `sessions` for backward compatible reasons                                                     |
-| 2023/03/15 | Modified the description for `purchase_country` in Request/Capture/GET payment                                                                      |
-| 2023/03/08 | Added `Go` code samples for both ABC and NAS                                                                                                        |
-| 2023/03/08 | Updated `trusted_beneficiary` in `Standalone` with a better description.                                                                            |
-| 2023/03/08 | Added `customer_ip` to `Standalone` response                                                                                                        |
-| 2023/03/08 | Added `javascript_enabled` to `Standalone` requests                                                                                                 |
-| 2023/03/08 | Renamed `Sessions` to `Standalone`, moving it under the new `Authentication` group.                                                                 |
-| 2023/02/22 | Added `3ds.exemption` and `3ds.allow_upgrade` to Hosted Payments Page and Payment Links.                                                            |
-| 2023/02/16 | Updated `PlatformsFileRetrieveResponse` and tidied up platforms-files paths                                                                         |
-| 2023/02/16 | Updated `PaymentRequest`, `Address`. Removed unused properties in `PaymentRequestGiropaySource`.                                                    |
-| 2023/02/15 | Added `exemption_applied` to 3DS details in GET response                                                                                            |
-| 2023/02/14 | Updated `PaymentRequestProcessingSettings` to add `line_of_business` field to the NAS payment request                                               |
-| 2023/02/13 | Update `ProcessingData` to add `aft`, `merchant_category_code`, `scheme_merchant_id` properties in `GetPaymentResponse`                             |
-| 2023/02/10 | Added `amount_allocations` object to Refund Request details                                                                                         |
-| 2023/02/10 | Added `resolved_reason` to get all disputes response for NAS and MBC.                                                                               |
-| 2023/02/10 | Updated `zip` format requirements to display as code style                                                                                          |
-| 2023/02/09 | Updated `zip` code format requirements for US merchants for Card Payouts                                                                            |
-| 2023/02/07 | Added Portuguese and Greek locale options to Hosted Payments Page and Payment Links                                                                 |
-| 2023/02/01 | Update file uploads/retrievals for Platforms                                                                                                        |
-| 2023/02/01 | Added the API reference for the Financial Actions API.                                                                                              |
-| 2023/01/26 | Add SEPA DD NAS Request and Response sources                                                                                                        |
-| 2022/01/25 | Add new sections for adding/deleting workflow actions and workflow conditions.                                                                      |
-| 2023/01/25 | Added `Unscheduled` payment_type to payment request                                                                                                 |
-| 2023/01/24 | Update PaymentResponse `processing` object to add `partner_payment_id`, `partner_status`, `partner_transaction_id`,                                 |
-|            | `partner_error_codes`, `partner_error_message`, `partner_authorization_code`, `partner_authorization_response_code`                                 |
-|            | properties.                                                                                                                                         |
-| 2023/01/24 | Update ProcessingData to add `retrieval_reference_number`, `partner_status`, `partner_transaction_id`,                                              |
-|            | `partner_authorization_code`, `partner_authorization_response_code` properties.                                                                     |
-| 2023/01/18 | Renamed partner_reason to partner_error_message for Reverse API payment methods                                                                     |
-| 2023/01/16 | Replaced the deprecated "reporting" scope with the new "reports" scope in Reports API.                                                              |
-| 2023/01/12 | Accuracy and readability improvements to NAS card payouts.                                                                                          |
-| 2023/01/11 | Remove old description from the session request's payload.                                                                                          |
-| 2023/01/04 | Add new tags to Platforms section and add `id` property on a response for PATCH payment instrument request.                                         |
-| 2023/01/04 | Add API key security to remaining Integrated Platforms endpoints.                                                                                   |
-| 2023/01/03 | Add Platforms Update Payment Instrument Request spec.                                                                                               |
-| 2022/12/20 | Added `first_name` and `address` to `recipient`, deprecated `recipient.zip`, made `sender.address` optional.                                        |
-| 2022/12/15 | Change Platforms schedule `by_day` response samples to use arrays.                                                                                  |
-| 2022/12/15 | Add CV Connect NAS Request and Response source.                                                                                                     |
-| 2022/12/15 | Add Trustly NAS Request and Response source.                                                                                                        |
-| 2022/12/15 | Add Illicado NAS Request and Response source.                                                                                                       |
-| 2022/12/14 | Add missing `available` property to Accounts Individual and Company responses                                                                       |
-| 2022/12/13 | Remove third-party fields from integrated auth                                                                                                      |
-| 2022/11/30 | Add API key security to IP endpoints.                                                                                                               |
-| 2022/11/29 | Adding prism device_session_id to payment request.                                                                                                  |
-| 2022/11/28 | Updated Issuing API spec to fix descriptions and add new properties                                                                                 |
-| 2022/11/15 | Adding a `entity` to BankPayoutRequest source.                                                                                                      |
-| 2022/11/14 | Changing Card Metadata API request format                                                                                                           |
-| 2022/11/09 | Removed the `risk` endpoints                                                                                                                        |
-| 2022/11/03 | Added `score` property to the `risk` object on the 201 created payment response and GET details response                                            |
-| 2022/11/02 | Fix indentation bug causing 'document' property to not be shown in `PlatformsPaymentInstrumentCreate.yaml`                                          |
-| 2022/11/02 | Ensure 'document' property is exposed on all relevant Platforms payment instruments schemas                                                         |
-| 2022/11/02 | Add `default` property to Platforms payment instrument create examples                                                                              |
-| 2022/11/02 | Fix indentation bug causing 'document' property to not be shown in `PlatformsPaymentInstrumentCreate.yaml`                                          |
-| 2022/10/31 | Updated `payment_method` to be mandatory                                                                                                            |
-| 2022/10/25 | Added Card Metadata API                                                                                                                             |
-| 2022/10/20 | Removed wrong remark about app on Sessions channel data                                                                                             |
-| 2022/10/20 | Added the `3ds.allow_upgrade` to payment requests & `3ds.upgrade_reason` to the 202 accepted & GET endpoint responses                               |
-| 2022/10/18 | Add new challenge indicator for authentication: data_share                                                                                          |
-| 2022/10/17 | Fixed Card and Token sources in Session to not have store_for_future_use                                                                            |
-| 2022/10/11 | Add Tamara NAS Request and Response source.                                                                                                         |
-| 2022/09/29 | Added new GET Payments endpoint                                                                                                                     |
-| 2022/09/27 | Adding a `customer` to PaymentRequest as a source.                                                                                                  |
-| 2022/09/27 | Split ProcessingSettings object into PaymentRequestProcessingSettings and CaptureRequestProcessingSettings                                          |
-| 2022/09/22 | Add Integrated Platforms email address field and descriptions for French seller data                                                                |
-| 2022/09/16 | Corrected one of the Reports API paths.                                                                                                             |
-| 2022/09/15 | Add Alipay Plus `processing.app_id` field to ProcessingData.                                                                                        |
-| 2022/09/13 | Add scheme to session source.                                                                                                                       |
-| 2022/09/12 | Amended address state field to have validation of <= 2 chars rather than <= 3 and fixed text description to match.                                  |
-| 2022/09/06 | ADD missing challenge indicator field.                                                                                                              |
-| 2022/09/06 | Added the `processing.partner_customer_id` field to ProcessingData.                                                                                 |
-| 2022/09/05 | ADD Alma NAS Request source.                                                                                                                        |
-| 2022/09/02 | Adding `amount_allocations` object to Payment request, Capture and Payment Details                                                                  |
-| 2022/08/29 | Add One Klarna Nas structure                                                                                                                        |
-| 2022/08/26 | ADD KNET NAS Request and Response source                                                                                                            |
-| 2022/08/25 | Add P24 NAS Request and Response source.                                                                                                            |
-| 2022/08/29 | Add Postfinance, Bancontact and Multibanco NAS Request and Response sources                                                                         |
-| 2022/08/26 | ADD KNET NAS Request and Response source                                                                                                            |
-| 2022/08/25 | Add P24 NAS Request and Response source.                                                                                                            |
-| 2022/08/23 | Add STC Pay                                                                                                                                         |
-| 2022/08/19 | Add Benefit PG specific requirements to `reference` description                                                                                     |
-| 2022/08/19 | Added alipay_plus type                                                                                                                              |
-| 2022/08/17 | Added Reports API                                                                                                                                   |
-| 2022/08/10 | Add Giropay, EPS Request and Response source.                                                                                                       |
-| 2022/08/09 | Add Mbway NAS Request and Response source.                                                                                                          |
-| 2022/08/09 | Add QPay Payment Request & Response source.                                                                                                         |
-| 2022/08/09 | Add Benefit PG Request and Response sources                                                                                                         |
-| 2022/08/08 | Fixing document types for platforms                                                                                                                 |
-| 2022/08/05 | Add AfterPay NAS Request and Response source.                                                                                                       |
-| 2022/08/03 | Add discriminator for 3ds information                                                                                                               |
-| 2022/08/03 | Add missing `token_format` to Google Pay and Apple Pay token responses.                                                                             |
-| 2022/07/29 | Adding `marketplace` object to capture and other minor fixes to IP space                                                                            |
-| 2022/07/29 | Update Java, C#, PHP & Python code samples to match new SDK Version.                                                                                |
-| 2022/07/20 | Added Alipay Plus's e-wallets supports                                                                                                              |
-| 2022/07/20 | Adding required fields for Platforms payment instruments and separate `corporate` and `individual` examples                                         |
-| 2022/07/20 | Added `knet`, `giropay`, `bancontact`, `eps`, `p24`, and `multibanco` to Hosted Payments and Payment Links.                                         |
-| 2022/07/19 | Updated example for Platforms payout schedules from `currency` to `GBP` and `ISO`                                                                   |
-| 2022/07/19 | Update WeChat Pay NAS structure                                                                                                                     |
-| 2022/07/14 | Add Sofort NAS Request and Response source.                                                                                                         |
-| 2022/07/14 | Add `locale` property to Get Payment Link details response                                                                                          |
-| 2022/07/14 | Added `customer`, `description`, `billing descriptor`, `shipping`, and `items` objects to Capture requests                                          |
-| 2022/07/13 | Added fields for Level 2 and Level 3 data.                                                                                                          |
-| 2022/07/13 | Added the `phone` object to `customer` object for payments.                                                                                         |
-| 2022/07/13 | Adds fields required EU sellers using the Accounts API                                                                                              |
-| 2022/07/13 | Added the `phone` object to `customer` object for payments.                                                                                         |
-| 2022/07/11 | Replaced `identification` enum with `identity_verification` for Platform Files purpose                                                              |
-| 2022/07/06 | Change `by_day` and `by_month_day` within Platform payout schedule to support multiple values.                                                      |
-| 2022/07/04 | Rename instances of `instalment` to `installment` in Sessions.                                                                                      |
-| 2022/05/28 | Add `instalment`, `add_card`, `maintain_card` authentication type in Sessions.                                                                      |
-| 2022/06/27 | Added iDEAL NAS Request and Response Source                                                                                                         |
-| 2022/05/23 | Update Alipay Plus NAS structure                                                                                                                    |
-| 2022/06/01 | Marketplace API renamed to Accounts API                                                                                                             |
-| 2022/05/23 | Added Alipay Plus NAS structure                                                                                                                     |
-| 2022/05/19 | Added WeChat Pay NAS structure                                                                                                                      |
-| 2022/05/18 | Added "Get transfer details"                                                                                                                        |
-| 2022/05/11 | Added Arabic locale option to Hosted Payments Page and Payment Links.                                                                               |
-| 2022/05/10 | Added `3ds.challenge_indicator` to Hosted Payments Page and Payment Links.                                                                          |
-| 2022/04/28 | Add recurring authentication type in Sessions.                                                                                                      |
-| 2022/04/27 | Added Scandinavian locale options to Hosted Payments Page and Payment Links.                                                                        |
-| 2022/04/27 | Added the `challenged` field to the GET payments response schema.                                                                                   |
-| 2022/04/20 | Added required idempotency key to Transfers API                                                                                                     |
-| 2022/04/19 | Update `3ds.exemption` available enums                                                                                                              |
-| 2022/04/06 | Added `/payout-schedules` endpoint with `GET` and `PUT` methods to the Marketplace API                                                              |
-| 2022/03/30 | Adds "Get action invocations" endpoint                                                                                                              |
-| 2022/03/28 | Update PHP code samples                                                                                                                             |
-| 2022/03/25 | Increased max length for `reference` in "Onboard a sub-entity" to 50 characters                                                                     |
-| 2022/03/22 | Added new scheme `cartes_bancaires` to enum `scheme` in Get and Create Sessions Responses                                                           |
-| 2022/03/22 | Fixed invalid format for `authentication_date`                                                                                                      |
-| 2022/03/18 | Added Cartes Bancaires changes to Sessions request and response.                                                                                    |
-| 2022/03/16 | Adds `document` object to the `company` object in the Marketplace API                                                                               |
-| 2022/03/09 | Added the `provider_token` payment request source type.                                                                                             |
-| 2022/03/08 | Change C# samples to suggest the usage of `await` instead of `.Result`                                                                              |
-| 2022/03/02 | Adds Transfers and Balances                                                                                                                         |
-| 2022/02/23 | Adds Hosted Payments Page and Payment Links                                                                                                         |
-| 2022/02/18 | Added `Increment Payment Authorization` code samples for Java & C#                                                                                  |
-| 2022/02/02 | Adds `active` property for workflows                                                                                                                |
-| 2022/01/26 | Update code samples for Java.                                                                                                                       |
-| 2022/01/25 | Update code samples for C#.                                                                                                                         |
-| 2022/01/19 | Added test a workflow endpoint.                                                                                                                     |
-| 2022/01/13 | Update code samples for Node JS.                                                                                                                    |
-| 2021/11/29 | Increase max length of the NAS `success_url` and `failure_url` fields of the payment request (both from 255 to 1024).                               |
-| 2021/11/11 | Added `3ds.challenge_indicator` to card payment requests.                                                                                           |
-| 2021/11/03 | Adds `identification` object under parent `sender` object in payment request.                                                                       |
-| 2021/10/18 | Added the `marketplaces.sub-entities` object to support split payments.                                                                             |
+| Date       | Description of change                                                                                                                                                                          |
+|------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 2024/05/13 | Add `ach` type to StoreInstrumentRequest, StoreInstrumentResponse and RetrieveInstrumentResponse                                                                                               |
+| 2024/05/07 | Updated the description of `cryptogram` property in Standalone.                                                                                                                                |
+| 2024/05/01 | Add `StcPay` to Payment Context flow.                                                                                                                                                          |
+| 2024/04/15 | Updated the description of `reference` property in Standalone.                                                                                                                                 |
+| 2024/04/12 | Adds `account_update_status` field to the card payment and get card payment details responses, which specifies the reason a card was updated by the Real-Time Account Updater.                                                                                              |
+| 2024/04/10 | Updated the description of `purpose` field in Payment request.                                                                                                                                 |
+| 2024/04/09 | Add `payment_session_token` field definition for Payment Sessions                                                                                                                              |
+| 2024/04/03 | Remove all references to 3DS1 concepts from the documentation, as 3DS1 has been decommissioned.                                                                                                |
+| 2024/04/03 | Adds the ability to enrich Payment Sessions, Hosted Payments Page, and Payment Links requests with the new `sender` object.                                                                    |
+| 2024/03/28 | Added `network_token` as `destination.type` for Card Payouts                                                                                                                                   |
+| 2024/03/27 | Updated Network Token get response.                                                                                                                                                            |
+| 2024/03/27 | Removed `bic` as a field for creating a payment with `iDEAL` source type and noted that reference is required                                                                                  |
+| 2024/03/27 | Add `destination` to refund request.                                                                                                                                                           |
+| 2024/03/27 | Add `Instruction` to Payment request                                                                                                                                                           |
+| 2024/03/27 | Deprecated the ability to link `instruments` to a customer in the `POST /customers` and `PATCH /customers/{identifier}` endpoints.                                                             |
+| 2024/03/27 | Adds new `GET /disputes/{dispute_id}/evidence/submitted` endpoint, which enables you to retrieve a unique ID for a PDF file containing all the evidence submitted to represent a dispute case. |
+| 2024/03/25 | Add `destination` to refund request.                                                                                                                                                           |
+| 2024/03/19 | Removed `shipping.delay` from payment capture request                                                                                                                                          |
+| 2024/03/19 | Removed `klarna` specific fields from Payment Request                                                                                                                                          |
+| 2024/03/19 | Added `tax_amount` and `custom_payment_method_ids` to PaymentContext request                                                                                                                   |
+| 2024/03/19 | Added `source.type` dropdown to Post PaymentContext request and Get PaymentContext response supporting `klarna` additional to `paypal`                                                         |
+| 2024/03/19 | Removed `klarna` as source.type from Payment Request.                                                                                                                                          |
+| 2024/03/14 | Add `tax_verification` to Platforms document purposes.                                                                                                                                         |
+| 2024/03/11 | Add `customer` object to Payment Contexts GET Response                                                                                                                                         |
+| 2024/03/04 | Add `paypal` field definition for Payment Sessions, Hosted Payments Page and Payment Links                                                                                                     |
+| 2024/03/04 | Fixed `risk` field definition for Hosted Payments Page and Payment Links                                                                                                                       |
+| 2024/02/28 | Remove `issuer_not_enrolled` error code that is deprecated.                                                                                                                                    |
+| 2024/02/28 | Remove `exemption` from Sessions response required fields                                                                                                                                      |
+| 2024/02/27 | Add `partial_authorization` type to PaymentRequest and `amount_requested` to PaymentResponse                                                                                                   |
+| 2024/02/27 | Updated Forex Rates endpoint to include new Scheme Acquiring product.                                                                                                                          |
+| 2024/02/26 | Fix `sepa` created_on date-time format in RetrieveInstrumentResponse                                                                                                                           |
+| 2024/02/26 | Updated `reference` field validation                                                                                                                                                           |
+| 2024/02/22 | Add `sepa` type to RetrieveInstrumentResponse                                                                                                                                                  |
+| 2024/02/22 | Adding more details to source of sample card authorization response                                                                                                                            |
+| 2024/02/20 | Add `sepa` type to StoreInstrumentRequest and StoreInstrumentResponse                                                                                                                          |
+| 2024/02/13 | Added `challenge_notification_url` to NonHostedCompletionInfo                                                                                                                                  |
+| 2024/02/12 | Added `card_wallet_type` to POST and GET response                                                                                                                                              |
+| 2024/02/06 | Added Sequra NAS Request and Response source.                                                                                                                                                  |
+| 2024/01/31 | Fixed incremental authorization response details                                                                                                                                               |
+| 2024/01/23 | Adds the Payment Sessions API, used in the Flow payment flow.                                                                                                                    |
+| 2024/01/16 | Fixed CardPayoutActionsResponse details                                                                                                                                                        |
+| 2024/01/11 | Amends the create session response. Adds Discover to the list of schemes in Standalone authentication.                                                                                         |
+| 2023/12/27 | Restructured 3ds request details for integrated authentication.                                                                                                                                |
+| 2023/12/19 | Added `display_name` and `customer_retry` fields to Hosted Payments Page and Payment Links, and `giropay` to their supported payment methods.                                                  |
+| 2023/12/14 | Renamed `issuer_name` to `issuing_bank` on FinancialAction response.                                                                                                                           |
+| 2023/12/11 | Added `scheme_metadata` block description to card metadata response.                                                                                                                           |
+| 2023/12/06 | Added regulated range and sub-product specific fields to card metadata response.                                                                                                               |
+| 2023/11/30 | Added `segment` to payment request                                                                                                                                                             |
+| 2023/11/29 | Added new object `Retry` to the payment request and response, as well as a new cancellation endpoint.                                                                                          |
+| 2023/11/29 | Added `encrypted_card_number` to payment response card source                                                                                                                                  |
+| 2023/11/29 | Add `local_schemes` to card metadata response and deprecate `scheme_local`                                                                                                                     |
+| 2023/11/27 | Added compelling evidence object to the provide evidence object in the disputes.                                                                                                               |
+| 2023/11/24 | Add new GET Transaction By Id endpoint for Card Issuing                                                                                                                                        |
+| 2023/11/23 | Add new roles for `Platforms` onboarding.                                                                                                                                                      |
+| 2023/11/20 | Add Identity Verification documentation                                                                                                                                                        |
+| 2023/11/16 | Add API reference for reserve rules                                                                                                                                                            |
+| 2023/11/16 | Fixed `Platforms` downgraded onboarding.                                                                                                                                                       |
+| 2023/11/09 | Add `cvv` to token type dropdown.                                                                                                                                                              |
+| 2023/11/07 | Add `surcharge_amount` field in Payments                                                                                                                                                       |
+| 2023/11/03 | Deprecate `default` flag on platforms payment instruments                                                                                                                                      |
+| 2023/11/02 | Update `allow_payment_methods` values for Hosted Payments Page and Payment Links                                                                                                               |
+|            | Add `disabled_payment_methods` property to Hosted Payments Page and Payment Links                                                                                                              |
+| 2023/11/01 | Updated `risk.enabled` as optional when requesting a payment or payout                                                                                                                         |
+| 2023/10/30 | Relax cvv validation for non-pci card-on-file flows to support hosted cvv                                                                                                                      |
+| 2023/10/30 | Add additional authentication exemptions                                                                                                                                                       |
+| 2023/10/25 | Remove `mandate_id` and `date_of_signature` from SEPAV4 required properties                                                                                                                    |
+| 2023/10/13 | Add Network Tokens API                                                                                                                                                                         |
+| 2023/10/12 | Add examples of `currency` field to card metadata response                                                                                                                                     |
+| 2023/10/10 | Update `currency` as optional when simulating issuing authorizations requests                                                                                                                  |
+| 2023/10/03 | Add payment instrument ID to payout schedule request and response                                                                                                                              |
+| 2023/09/27 | Additional fixes to the swagger file                                                                                                                                                           |
+| 2023/09/28 | Updated the description and maxlength of `Address.state` field                                                                                                                                 |
+| 2023/09/22 | Update the description and summary for the endpoint to complete a session                                                                                                                      |
+| 2023/09/18 | Added `holding_currencies` back to `Platforms` section                                                                                                                                         |
+| 2023/09/14 | Add `currency` field to card metadata response                                                                                                                                                 |
+| 2023/09/07 | Fixed swagger file                                                                                                                                                                             |
+| 2023/09/07 | Update descriptions for `preferred_scheme` and `attempt_n3d`                                                                                                                                   |
+| 2023/09/11 | Add Payment Plan Object PaymentRequest                                                                                                                                                         |
+| 2023/09/11 | Remove Marketplace Object Payment and Capture Request and GET response                                                                                                                         |
+| 2023/09/07 | Fixed swagger file                                                                                                                                                                             |
+| 2023/09/07 | Update descriptions for `preferred_scheme` and `attempt_n3d`                                                                                                                                   |
+| 2023/09/07 | Update descriptions for `preferred_scheme` and `attempt_n3d`                                                                                                                                   |
+|            | Removed `source.amount` from `CardPayoutRequest` object                                                                                                                                        |
+| 2023/08/22 | Fixed files sub-domain and request examples.                                                                                                                                                   |
+|            | Deprecate property `authentication_method` for the Standalone Sessions API                                                                                                                     |
+| 2023/08/17 | Added new `error_codes`s for the Standalone Sessions API                                                                                                                                       |
+| 2023/08/15 | Fixed missing property for US individuals                                                                                                                                                      |
+| 2023/08/09 | Adding hosted onboarding flow as `beta`. Added examples for onboarding request from Platforms. Added new files endpoint for Platforms                                                          |
+| 2023/08/05 | Add `withCurrencyAccountId` query parameter to get balances request.                                                                                                                           |
+| 2023/07/28 | Matched `3ds.authentication_response` with that of the sessions response to provide more information about each code                                                                           |
+| 2023/07/19 | Added new objects `AccountInfo`, `MerchantAuthenticationInfo`, to `3dsRequest`. Added new object `InitialAuthentication` to `3dsRequestThirdParty`.                                            |
+|            | Added new object `ThreeDsRequestorAuthenticationInfo` to `3dsData`. Fixed typo in `CardholderAccountInfo` transactions_today field.                                                            |
+|            | Removed commas in `three_ds_requestor_authentication_info` object enums and removed `prior_transaction_reference` field                                                                        |
+| 2023/07/18 | Remove `bank_code` from `SEPAV4` reference                                                                                                                                                     |
+| 2023/03/14 | Added the available `product_type` options for `tamara` payment method                                                                                                                         |
+| 2023/07/10 | Remove `Beta` tag from Financial Actions API                                                                                                                                                   |
+| 2023/07/05 | Remove deprecated `instruments` endpoint from Platforms API                                                                                                                                    |
+| 2023/07/04 | Add `currency` property to `TransferSource`                                                                                                                                                    |
+| 2023/07/03 | Add `holding_currencies` property to sub-entity onboarding profile                                                                                                                             |
+| 2023/07/03 | Updated `processing-channel` type to `processing_channel` in Add/Update Workflow Condition                                                                                                     |
+| 2023/06/28 | Added `InitialTransaction` to `SessionRequest`                                                                                                                                                 |
+| 2023/06/28 | Added new `MerchantInitiated` channel type and new object `InitialTransaction`                                                                                                                 |
+| 2023/06/28 | Added `account_holder` object to Giropay payment create request and get payment response                                                                                                       |
+| 2023/06/26 | Added `optimization` object to Authentication request and responses                                                                                                                            |
+| 2023/06/21 | Added new card testing endpoint to simulate refunds for Issuing                                                                                                                                |
+| 2023/06/14 | Added new props in `CardholderAccountInfo` and `MerchantRiskInfo`, and new object `ThreeDsRequestorAuthenticationInfo`                                                                         |
+| 2023/06/05 | Added LocalBillingDescriptor to NAS spec                                                                                                                                                       |
+| 2023/05/31 | Removed Forex Quotes endpoint                                                                                                                                                                  |
+| 2023/05/23 | Added new card testing endpoint to simulate clearing for Issuing                                                                                                                               |
+| 2023/05/17 | Added new card testing endpoints to simulate pre/incremental authorizations and reversals for Issuing                                                                                          |
+| 2023/05/16 | Updated `sender.reference` minimum length for Card Payouts                                                                                                                                     |
+| 2023/05/09 | Add `local_schemes` to response source and deprecate `scheme_local`                                                                                                                            |
+| 2023/04/21 | Remove `giropay` from Hosted Payments and Payment Links                                                                                                                                        |
+| 2023/04/13 | Add `authentication_status_reason` to `3ds` object in the GET payment details response                                                                                                         |
+| 2023/04/04 | Update conflict response for onboard sub entity operation to include ID                                                                                                                        |
+| 2023/04/03 | Updated `payment_ip` to support IPv6 addresses                                                                                                                                                 |
+| 2023/03/28 | Increased NAS `recipient.account_number` max length from 10 to 34                                                                                                                              |
+| 2023/04/03 | Added `if-match` header to `PlatformsPaymentInstrumentUpdate` for Integrated Platforms                                                                                                         |
+| 2023/04/02 | Added `card_token` object to `PlatformsPaymentInstrument` for Integrated Platforms                                                                                                             |
+| 2023/03/30 | Updated Bank Payouts docs hyperlink                                                                                                                                                            |
+| 2023/03/23 | Remove `marketplace` from Hosted Payments and Payment Links                                                                                                                                    |
+| 2023/03/22 | Adds API documentation for card issuing                                                                                                                                                        |
+| 2023/03/21 | Modified `Standalone` API path to correctly point to `sessions` for backward compatible reasons                                                                                                |
+| 2023/03/15 | Modified the description for `purchase_country` in Request/Capture/GET payment                                                                                                                 |
+| 2023/03/08 | Added `Go` code samples for both ABC and NAS                                                                                                                                                   |
+| 2023/03/08 | Updated `trusted_beneficiary` in `Standalone` with a better description.                                                                                                                       |
+| 2023/03/08 | Added `customer_ip` to `Standalone` response                                                                                                                                                   |
+| 2023/03/08 | Added `javascript_enabled` to `Standalone` requests                                                                                                                                            |
+| 2023/03/08 | Renamed `Sessions` to `Standalone`, moving it under the new `Authentication` group.                                                                                                            |
+| 2023/02/22 | Added `3ds.exemption` and `3ds.allow_upgrade` to Hosted Payments Page and Payment Links.                                                                                                       |
+| 2023/02/16 | Updated `PlatformsFileRetrieveResponse` and tidied up platforms-files paths                                                                                                                    |
+| 2023/02/16 | Updated `PaymentRequest`, `Address`. Removed unused properties in `PaymentRequestGiropaySource`.                                                                                               |
+| 2023/02/15 | Added `exemption_applied` to 3DS details in GET response                                                                                                                                       |
+| 2023/02/14 | Updated `PaymentRequestProcessingSettings` to add `line_of_business` field to the NAS payment request                                                                                          |
+| 2023/02/13 | Update `ProcessingData` to add `aft`, `merchant_category_code`, `scheme_merchant_id` properties in `GetPaymentResponse`                                                                        |
+| 2023/02/10 | Added `amount_allocations` object to Refund Request details                                                                                                                                    |
+| 2023/02/10 | Added `resolved_reason` to get all disputes response for NAS and MBC.                                                                                                                          |
+| 2023/02/10 | Updated `zip` format requirements to display as code style                                                                                                                                     |
+| 2023/02/09 | Updated `zip` code format requirements for US merchants for Card Payouts                                                                                                                       |
+| 2023/02/07 | Added Portuguese and Greek locale options to Hosted Payments Page and Payment Links                                                                                                            |
+| 2023/02/01 | Update file uploads/retrievals for Platforms                                                                                                                                                   |
+| 2023/02/01 | Added the API reference for the Financial Actions API.                                                                                                                                         |
+| 2023/01/26 | Add SEPA DD NAS Request and Response sources                                                                                                                                                   |
+| 2022/01/25 | Add new sections for adding/deleting workflow actions and workflow conditions.                                                                                                                 |
+| 2023/01/25 | Added `Unscheduled` payment_type to payment request                                                                                                                                            |
+| 2023/01/24 | Update PaymentResponse `processing` object to add `partner_payment_id`, `partner_status`, `partner_transaction_id`,                                                                            |
+|            | `partner_error_codes`, `partner_error_message`, `partner_authorization_code`, `partner_authorization_response_code`                                                                            |
+|            | properties.                                                                                                                                                                                    |
+| 2023/01/24 | Update ProcessingData to add `retrieval_reference_number`, `partner_status`, `partner_transaction_id`,                                                                                         |
+|            | `partner_authorization_code`, `partner_authorization_response_code` properties.                                                                                                                |
+| 2023/01/18 | Renamed partner_reason to partner_error_message for Reverse API payment methods                                                                                                                |
+| 2023/01/16 | Replaced the deprecated "reporting" scope with the new "reports" scope in Reports API.                                                                                                         |
+| 2023/01/12 | Accuracy and readability improvements to NAS card payouts.                                                                                                                                     |
+| 2023/01/11 | Remove old description from the session request's payload.                                                                                                                                     |
+| 2023/01/04 | Add new tags to Platforms section and add `id` property on a response for PATCH payment instrument request.                                                                                    |
+| 2023/01/04 | Add API key security to remaining Integrated Platforms endpoints.                                                                                                                              |
+| 2023/01/03 | Add Platforms Update Payment Instrument Request spec.                                                                                                                                          |
+| 2022/12/20 | Added `first_name` and `address` to `recipient`, deprecated `recipient.zip`, made `sender.address` optional.                                                                                   |
+| 2022/12/15 | Change Platforms schedule `by_day` response samples to use arrays.                                                                                                                             |
+| 2022/12/15 | Add CV Connect NAS Request and Response source.                                                                                                                                                |
+| 2022/12/15 | Add Trustly NAS Request and Response source.                                                                                                                                                   |
+| 2022/12/15 | Add Illicado NAS Request and Response source.                                                                                                                                                  |
+| 2022/12/14 | Add missing `available` property to Accounts Individual and Company responses                                                                                                                  |
+| 2022/12/13 | Remove third-party fields from integrated auth                                                                                                                                                 |
+| 2022/11/30 | Add API key security to IP endpoints.                                                                                                                                                          |
+| 2022/11/29 | Adding prism device_session_id to payment request.                                                                                                                                             |
+| 2022/11/28 | Updated Issuing API spec to fix descriptions and add new properties                                                                                                                            |
+| 2022/11/15 | Adding a `entity` to BankPayoutRequest source.                                                                                                                                                 |
+| 2022/11/14 | Changing Card Metadata API request format                                                                                                                                                      |
+| 2022/11/09 | Removed the `risk` endpoints                                                                                                                                                                   |
+| 2022/11/03 | Added `score` property to the `risk` object on the 201 created payment response and GET details response                                                                                       |
+| 2022/11/02 | Fix indentation bug causing 'document' property to not be shown in `PlatformsPaymentInstrumentCreate.yaml`                                                                                     |
+| 2022/11/02 | Ensure 'document' property is exposed on all relevant Platforms payment instruments schemas                                                                                                    |
+| 2022/11/02 | Add `default` property to Platforms payment instrument create examples                                                                                                                         |
+| 2022/11/02 | Fix indentation bug causing 'document' property to not be shown in `PlatformsPaymentInstrumentCreate.yaml`                                                                                     |
+| 2022/10/31 | Updated `payment_method` to be mandatory                                                                                                                                                       |
+| 2022/10/25 | Added Card Metadata API                                                                                                                                                                        |
+| 2022/10/20 | Removed wrong remark about app on Sessions channel data                                                                                                                                        |
+| 2022/10/20 | Added the `3ds.allow_upgrade` to payment requests & `3ds.upgrade_reason` to the 202 accepted & GET endpoint responses                                                                          |
+| 2022/10/18 | Add new challenge indicator for authentication: data_share                                                                                                                                     |
+| 2022/10/17 | Fixed Card and Token sources in Session to not have store_for_future_use                                                                                                                       |
+| 2022/10/11 | Add Tamara NAS Request and Response source.                                                                                                                                                    |
+| 2022/09/29 | Added new GET Payments endpoint                                                                                                                                                                |
+| 2022/09/27 | Adding a `customer` to PaymentRequest as a source.                                                                                                                                             |
+| 2022/09/27 | Split ProcessingSettings object into PaymentRequestProcessingSettings and CaptureRequestProcessingSettings                                                                                     |
+| 2022/09/22 | Add Integrated Platforms email address field and descriptions for French seller data                                                                                                           |
+| 2022/09/16 | Corrected one of the Reports API paths.                                                                                                                                                        |
+| 2022/09/15 | Add Alipay Plus `processing.app_id` field to ProcessingData.                                                                                                                                   |
+| 2022/09/13 | Add scheme to session source.                                                                                                                                                                  |
+| 2022/09/12 | Amended address state field to have validation of <= 2 chars rather than <= 3 and fixed text description to match.                                                                             |
+| 2022/09/06 | ADD missing challenge indicator field.                                                                                                                                                         |
+| 2022/09/06 | Added the `processing.partner_customer_id` field to ProcessingData.                                                                                                                            |
+| 2022/09/05 | ADD Alma NAS Request source.                                                                                                                                                                   |
+| 2022/09/02 | Adding `amount_allocations` object to Payment request, Capture and Payment Details                                                                                                             |
+| 2022/08/29 | Add One Klarna Nas structure                                                                                                                                                                   |
+| 2022/08/26 | ADD KNET NAS Request and Response source                                                                                                                                                       |
+| 2022/08/25 | Add P24 NAS Request and Response source.                                                                                                                                                       |
+| 2022/08/29 | Add Postfinance, Bancontact and Multibanco NAS Request and Response sources                                                                                                                    |
+| 2022/08/26 | ADD KNET NAS Request and Response source                                                                                                                                                       |
+| 2022/08/25 | Add P24 NAS Request and Response source.                                                                                                                                                       |
+| 2022/08/23 | Add STC Pay                                                                                                                                                                                    |
+| 2022/08/19 | Add Benefit PG specific requirements to `reference` description                                                                                                                                |
+| 2022/08/19 | Added alipay_plus type                                                                                                                                                                         |
+| 2022/08/17 | Added Reports API                                                                                                                                                                              |
+| 2022/08/10 | Add Giropay, EPS Request and Response source.                                                                                                                                                  |
+| 2022/08/09 | Add Mbway NAS Request and Response source.                                                                                                                                                     |
+| 2022/08/09 | Add QPay Payment Request & Response source.                                                                                                                                                    |
+| 2022/08/09 | Add Benefit PG Request and Response sources                                                                                                                                                    |
+| 2022/08/08 | Fixing document types for platforms                                                                                                                                                            |
+| 2022/08/05 | Add AfterPay NAS Request and Response source.                                                                                                                                                  |
+| 2022/08/03 | Add discriminator for 3ds information                                                                                                                                                          |
+| 2022/08/03 | Add missing `token_format` to Google Pay and Apple Pay token responses.                                                                                                                        |
+| 2022/07/29 | Adding `marketplace` object to capture and other minor fixes to IP space                                                                                                                       |
+| 2022/07/29 | Update Java, C#, PHP & Python code samples to match new SDK Version.                                                                                                                           |
+| 2022/07/20 | Added Alipay Plus's e-wallets supports                                                                                                                                                         |
+| 2022/07/20 | Adding required fields for Platforms payment instruments and separate `corporate` and `individual` examples                                                                                    |
+| 2022/07/20 | Added `knet`, `giropay`, `bancontact`, `eps`, `p24`, and `multibanco` to Hosted Payments and Payment Links.                                                                                    |
+| 2022/07/19 | Updated example for Platforms payout schedules from `currency` to `GBP` and `ISO`                                                                                                              |
+| 2022/07/19 | Update WeChat Pay NAS structure                                                                                                                                                                |
+| 2022/07/14 | Add Sofort NAS Request and Response source.                                                                                                                                                    |
+| 2022/07/14 | Add `locale` property to Get Payment Link details response                                                                                                                                     |
+| 2022/07/14 | Added `customer`, `description`, `billing descriptor`, `shipping`, and `items` objects to Capture requests                                                                                     |
+| 2022/07/13 | Added fields for Level 2 and Level 3 data.                                                                                                                                                     |
+| 2022/07/13 | Added the `phone` object to `customer` object for payments.                                                                                                                                    |
+| 2022/07/13 | Adds fields required EU sellers using the Accounts API                                                                                                                                         |
+| 2022/07/13 | Added the `phone` object to `customer` object for payments.                                                                                                                                    |
+| 2022/07/11 | Replaced `identification` enum with `identity_verification` for Platform Files purpose                                                                                                         |
+| 2022/07/06 | Change `by_day` and `by_month_day` within Platform payout schedule to support multiple values.                                                                                                 |
+| 2022/07/04 | Rename instances of `instalment` to `installment` in Sessions.                                                                                                                                 |
+| 2022/05/28 | Add `instalment`, `add_card`, `maintain_card` authentication type in Sessions.                                                                                                                 |
+| 2022/06/27 | Added iDEAL NAS Request and Response Source                                                                                                                                                    |
+| 2022/05/23 | Update Alipay Plus NAS structure                                                                                                                                                               |
+| 2022/06/01 | Marketplace API renamed to Accounts API                                                                                                                                                        |
+| 2022/05/23 | Added Alipay Plus NAS structure                                                                                                                                                                |
+| 2022/05/19 | Added WeChat Pay NAS structure                                                                                                                                                                 |
+| 2022/05/18 | Added "Get transfer details"                                                                                                                                                                   |
+| 2022/05/11 | Added Arabic locale option to Hosted Payments Page and Payment Links.                                                                                                                          |
+| 2022/05/10 | Added `3ds.challenge_indicator` to Hosted Payments Page and Payment Links.                                                                                                                     |
+| 2022/04/28 | Add recurring authentication type in Sessions.                                                                                                                                                 |
+| 2022/04/27 | Added Scandinavian locale options to Hosted Payments Page and Payment Links.                                                                                                                   |
+| 2022/04/27 | Added the `challenged` field to the GET payments response schema.                                                                                                                              |
+| 2022/04/20 | Added required idempotency key to Transfers API                                                                                                                                                |
+| 2022/04/19 | Update `3ds.exemption` available enums                                                                                                                                                         |
+| 2022/04/06 | Added `/payout-schedules` endpoint with `GET` and `PUT` methods to the Marketplace API                                                                                                         |
+| 2022/03/30 | Adds "Get action invocations" endpoint                                                                                                                                                         |
+| 2022/03/28 | Update PHP code samples                                                                                                                                                                        |
+| 2022/03/25 | Increased max length for `reference` in "Onboard a sub-entity" to 50 characters                                                                                                                |
+| 2022/03/22 | Added new scheme `cartes_bancaires` to enum `scheme` in Get and Create Sessions Responses                                                                                                      |
+| 2022/03/22 | Fixed invalid format for `authentication_date`                                                                                                                                                 |
+| 2022/03/18 | Added Cartes Bancaires changes to Sessions request and response.                                                                                                                               |
+| 2022/03/16 | Adds `document` object to the `company` object in the Marketplace API                                                                                                                          |
+| 2022/03/09 | Added the `provider_token` payment request source type.                                                                                                                                        |
+| 2022/03/08 | Change C# samples to suggest the usage of `await` instead of `.Result`                                                                                                                         |
+| 2022/03/02 | Adds Transfers and Balances                                                                                                                                                                    |
+| 2022/02/23 | Adds Hosted Payments Page and Payment Links                                                                                                                                                    |
+| 2022/02/18 | Added `Increment Payment Authorization` code samples for Java & C#                                                                                                                             |
+| 2022/02/02 | Adds `active` property for workflows                                                                                                                                                           |
+| 2022/01/26 | Update code samples for Java.                                                                                                                                                                  |
+| 2022/01/25 | Update code samples for C#.                                                                                                                                                                    |
+| 2022/01/19 | Added test a workflow endpoint.                                                                                                                                                                |
+| 2022/01/13 | Update code samples for Node JS.                                                                                                                                                               |
+| 2021/11/29 | Increase max length of the NAS `success_url` and `failure_url` fields of the payment request (both from 255 to 1024).                                                                          |
+| 2021/11/11 | Added `3ds.challenge_indicator` to card payment requests.                                                                                                                                      |
+| 2021/11/03 | Adds `identification` object under parent `sender` object in payment request.                                                                                                                  |
+| 2021/10/18 | Added the `marketplaces.sub-entities` object to support split payments.                                                                                                                        |
