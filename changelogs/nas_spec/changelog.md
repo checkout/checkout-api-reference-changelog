@@ -1,11 +1,13 @@
 # Changelog
 | Date       | Description of change                                                                                                                                                                          |
 |------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 2024/06/04 | Added the following Report Types to ReportResponse.Properties.Type.Enum: `Payments` `Retrievals` `Disputes` `FraudDetection` `ReportedFraudulentTransactions` `CardPayouts` `BankPayouts`      |
+|            | `IssuingAuthorizations` `IssuingCards` `IssuingChargebacks` `IssuingPresentments` `IssuingSettlementActivity` `Authentication`                                                                 | 
 | 2024/05/13 | Add `ach` type to StoreInstrumentRequest, StoreInstrumentResponse and RetrieveInstrumentResponse                                                                                               |
 | 2024/05/07 | Updated the description of `cryptogram` property in Standalone.                                                                                                                                |
 | 2024/05/01 | Add `StcPay` to Payment Context flow.                                                                                                                                                          |
 | 2024/04/15 | Updated the description of `reference` property in Standalone.                                                                                                                                 |
-| 2024/04/12 | Adds `account_update_status` field to the card payment and get card payment details responses, which specifies the reason a card was updated by the Real-Time Account Updater.                                                                                              |
+| 2024/04/12 | Adds `account_update_status` field to the card payment and get card payment details responses, which specifies the reason a card was updated by the Real-Time Account Updater.                 |
 | 2024/04/10 | Updated the description of `purpose` field in Payment request.                                                                                                                                 |
 | 2024/04/09 | Add `payment_session_token` field definition for Payment Sessions                                                                                                                              |
 | 2024/04/03 | Remove all references to 3DS1 concepts from the documentation, as 3DS1 has been decommissioned.                                                                                                |
@@ -40,7 +42,7 @@
 | 2024/02/12 | Added `card_wallet_type` to POST and GET response                                                                                                                                              |
 | 2024/02/06 | Added Sequra NAS Request and Response source.                                                                                                                                                  |
 | 2024/01/31 | Fixed incremental authorization response details                                                                                                                                               |
-| 2024/01/23 | Adds the Payment Sessions API, used in the Flow payment flow.                                                                                                                    |
+| 2024/01/23 | Adds the Payment Sessions API, used in the Flow payment flow.                                                                                                                                  |
 | 2024/01/16 | Fixed CardPayoutActionsResponse details                                                                                                                                                        |
 | 2024/01/11 | Amends the create session response. Adds Discover to the list of schemes in Standalone authentication.                                                                                         |
 | 2023/12/27 | Restructured 3ds request details for integrated authentication.                                                                                                                                |
