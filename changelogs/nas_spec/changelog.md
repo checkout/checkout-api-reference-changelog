@@ -1,6 +1,7 @@
 # Changelog
 | Date       | Description of change                                                                                                                                                                          |
 |------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 2024/06/10 | Introduction of `Control Profile` functionality and `Query remaining amount on the card`                                                            |
 | 2024/06/04 | Added the following Report Types to ReportResponse.Properties.Type.Enum: `Payments` `Retrievals` `Disputes` `FraudDetection` `ReportedFraudulentTransactions` `CardPayouts` `BankPayouts`      |
 |            | `IssuingAuthorizations` `IssuingCards` `IssuingChargebacks` `IssuingPresentments` `IssuingSettlementActivity` `Authentication`                                                                 | 
 | 2024/05/13 | Add `ach` type to StoreInstrumentRequest, StoreInstrumentResponse and RetrieveInstrumentResponse                                                                                               |
