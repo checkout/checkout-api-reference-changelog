@@ -1,6 +1,7 @@
 # Changelog
 | Date       | Description of change                                                                                                                                                                          |
 |------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 2024/06/18 | Review the entire PayToBank documentation                                                                                                                                                      |
 | 2024/06/18 | Added `processing.pan_preference` to  Payment request. Added enums to `instruction.purpose` field in Payment Request|
 | 2024/06/12 | Added `RequestSource_AccountHolder` object to: `PaymentRequestCardSource`, `PaymentRequestCustomerSource`, `PaymentRequestIdSource`, `PaymentRequestNetworkTokenSource`, `PaymentRequestTokenSource`. Added `ResponseSource_AccountHolder` object to `PaymentResponseCardSource`|
 | 2024/06/10 | Introduction of `Control Profile` functionality and `Query remaining amount on the card`                                                            |
@@ -8,6 +9,7 @@
 | 2024/06/04 | Added the following Report Types to ReportResponse.Properties.Type.Enum: `Payments` `Retrievals` `Disputes` `FraudDetection` `ReportedFraudulentTransactions` `CardPayouts` `BankPayouts`      |
 |            | `IssuingAuthorizations` `IssuingCards` `IssuingChargebacks` `IssuingPresentments` `IssuingSettlementActivity` `Authentication`                                                                 | 
 | 2024/05/13 | Add `ach` type to StoreInstrumentRequest, StoreInstrumentResponse and RetrieveInstrumentResponse                                                                                               |
+| 2024/05/09 | Add `Customer` to Payment Context flow.                                                                                                                                                        |
 | 2024/05/07 | Updated the description of `cryptogram` property in Standalone.                                                                                                                                |
 | 2024/05/01 | Add `StcPay` to Payment Context flow.                                                                                                                                                          |
 | 2024/04/15 | Updated the description of `reference` property in Standalone.                                                                                                                                 |
