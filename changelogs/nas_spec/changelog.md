@@ -1,6 +1,7 @@
 # Changelog
 | Date       | Description of change                                                                                                                                                                          |
 |------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 2024/06/26  | Add AML verification endpoints                                                                                                                                                                 |
 | 2024/06/18 | Review the entire PayToBank documentation                                                                                                                                                      |
 | 2024/06/18 | Added `processing.pan_preference` to  Payment request. Added enums to `instruction.purpose` field in Payment Request|
 | 2024/06/12 | Added `RequestSource_AccountHolder` object to: `PaymentRequestCardSource`, `PaymentRequestCustomerSource`, `PaymentRequestIdSource`, `PaymentRequestNetworkTokenSource`, `PaymentRequestTokenSource`. Added `ResponseSource_AccountHolder` object to `PaymentResponseCardSource`|
