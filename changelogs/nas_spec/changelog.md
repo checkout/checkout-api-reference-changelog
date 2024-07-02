@@ -1,6 +1,8 @@
 # Changelog
 | Date       | Description of change                                                                                                                                                                          |
 |------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 2024/06/27 | Update Identity Verification and AML verification text                                                                                                                                                                                                                           |
+| 2024/06/27 | Added new payment method source `Octopus Pay`
 | 2024/06/26  | Add AML verification endpoints                                                                                                                                                                 |
 | 2024/06/18 | Review the entire PayToBank documentation                                                                                                                                                      |
 | 2024/06/18 | Added `processing.pan_preference` to  Payment request. Added enums to `instruction.purpose` field in Payment Request|
