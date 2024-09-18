@@ -2,7 +2,8 @@
 
 | Date       | Description of change                                                                                                                                                                          |
 |------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 2024/08/27 | Update the max value of the `expires_in` fields for payment link request
+| 2024/09/12 | Update `knet` source object to include optional apple pay fields                                                                                                                               |
+| 2024/08/27 | Update the max value of the `expires_in` fields for payment link request                                                                                                                       |
 | 2024/07/02 | Removed support for `giropay` payment method for Payment Sessions, Hosted Payments Page and Payment Links                                                                                      |
 | 2024/07/01 | Removed `giropay` payment creation                                                                                                                                                             |
 | 2023/03/27 | Removed `bic` as a field for creating a payment with `iDEAL` source type                                                                                                                       |
