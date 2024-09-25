@@ -2,6 +2,13 @@
 
 | Date | Description of change |
 |---|---|
+| 2024/09/23| Add `Bizum` source type object |
+| 2024/09/23 | Fix `knet` source type bug |
+| 2024/09/23 | Remove 2.1.0 protocol version reference from 3DS docs |
+| 2024/09/18 | Add Klarna payment method to Payment Sessions, Hosted Payments Page and Payment Links |
+| 2024/09/17 | Remove `trustly` as a payment method from NAS. |
+| 2024/09/12 | Add Alipay+ payment methods to Payment Sessions, Hosted Payments Page and Payment Links |
+| 2024/09/12 | Update `knet` source object to include optional apple pay fields |
 | 2024/09/04 | Clarify `expires_in` units in Request an access token 200 response |
 | 2024/09/04 | Update payment context '_link' example to include 'href'. |
 | 2024/08/28 | Marked `items[]` as required for Klarna payment context requests |
