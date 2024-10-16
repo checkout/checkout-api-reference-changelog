@@ -2,6 +2,7 @@
 
 | Date       | Description of change                                                                                                                                                                                                                                                            |
 |------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 2024/10/09 | Add tabby to payment context request.
 | 2024/10/08 | Add Google SPA (Secure Payment Authentication) properties to Standalone endpoints |
 | 2024/10/01 | Add 3ds fields in Sessions API response.                                                                                                                                                                                                                                         |
 | 2024/10/03 | Remove verification_url from Identity Verification endpoints                                                                                                                                                                                                                     |
