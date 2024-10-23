@@ -2,6 +2,9 @@
 
 | Date       | Description of change                                                                                                                                                                                                                                                            |
 |------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 2024/10/23 | Add store payment details option for `applepay` and `googlepay` to Payment Sessions |
+| 2024/10/23 | Add `stcpay` payment method to Payment Sessions, Hosted Payments Page and Payment Links |
+| 2024/10/22 | Add validation restrictions to `ForwardBodyRequest` and `ForwardBodyHeadersRequest`
 | 2024/10/09 | Add tabby to payment context request.
 | 2024/10/08 | Add Google SPA (Secure Payment Authentication) properties to Standalone endpoints |
 | 2024/10/01 | Add 3ds fields in Sessions API response.                                                                                                                                                                                                                                         |
