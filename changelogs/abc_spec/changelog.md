@@ -2,6 +2,7 @@
 
 | Date       | Description of change                                                                                                                                                                          |
 |------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 2024/10/24 | Update Disputes Compelling Evidence mandatory fields due to Visa Mandate                                                                                                                       |
 | 2024/09/12 | Update `knet` source object to include optional apple pay fields                                                                                                                               |
 | 2024/08/27 | Update the max value of the `expires_in` fields for payment link request                                                                                                                       |
 | 2024/07/02 | Removed support for `giropay` payment method for Payment Sessions, Hosted Payments Page and Payment Links                                                                                      |

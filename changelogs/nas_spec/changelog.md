@@ -2,6 +2,10 @@
 
 | Date       | Description of change                                                                                                                                                                                                                                                            |
 |------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 2024/10/29 | Add `number`, `expiry_month` and `expiry_year` to the Sessions API specification for Standalone integration                                                                                                                                                                      |
+| 2024/10/29 | Add authentication experience to UPAPI
+| 2024/10/24 | Add `previous_payment_id` to Card Payout request
+| 2024/10/24 | Add ACH `service_type` to processing.
 | 2024/10/23 | Add store payment details option for `applepay` and `googlepay` to Payment Sessions |
 | 2024/10/23 | Add `stcpay` payment method to Payment Sessions, Hosted Payments Page and Payment Links |
 | 2024/10/22 | Add validation restrictions to `ForwardBodyRequest` and `ForwardBodyHeadersRequest`
