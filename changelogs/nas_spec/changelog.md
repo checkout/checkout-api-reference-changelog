@@ -2,6 +2,7 @@
 
 | Date       | Description of change                                                                                                                                                                                                                                                            |
 |------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 2024/12/03 | Deprecate `sofort` payment source type. |
 | 2024/11/07 | Make Security section example more generic. |
 | 2024/11/21 | Updates `PaymentSessionsResponse.yaml`to include the new secret field                                                                                                                                                        |
 | 2024/11/20 | Update Payment Interfaces supported payment methods                                                                                                                                                                                                                |
