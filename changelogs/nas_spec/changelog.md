@@ -2,6 +2,7 @@
 
 | Date       | Description of change                                                                                                                                                                                                                                                            |
 |------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 2025/01/22 | Add missing SEPA and ACH for PATCH Instrument
 | 2025/01/21 | Add `downtime` to `retry` object in the payment request                                                                                                                                                                                                                                            |
 | 2025/01/20 | Add `twint` to payment request and payment response source types and update the description for the reference field in `PaymentRequest.yaml` and `RefundRequest.yaml` to add a specific point for `twint`
 | 2025/01/13 | Reorder payment response source type                                                                                                                                                                                                                                             |
