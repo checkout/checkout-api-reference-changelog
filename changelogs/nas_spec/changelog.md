@@ -2,6 +2,9 @@
 
 | Date       | Description of change                                                                                                                                                                                                                                                            |
 |------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 2025/02/19 | Add `paypal` to `source` in the `getPaymentDetails` response
+| 2025/02/17 | Fix broken references.
+| 2025/02/10 | Removed Bizum `mobile_number` from source object. Because, we are using customer object now. 
 | 2025/01/27 | Update `PaymentSessionsRequest.yaml`, `PaymentLinksRequest.yaml` and `HostedPaymentsRequest.yaml` to include ANI capture fields 
 | 2025/01/22 | Adds `account_first_name_inquiry`, `account_middle_name_inquiry` & `account_last_name_inquiry` fields to `01_ResponseSources_AccountHolderIndividual` object. 
 | 2025/01/22 | Add missing SEPA and ACH for PATCH Instrument
