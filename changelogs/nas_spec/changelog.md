@@ -2,6 +2,8 @@
 
 | Date       | Description of change                                                                                                                                                                                                                                                            |
 |------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 2025/02/21 | Rename `01_PaymentRequestIndividualSender.yaml`: `dob` to `date_of_birth`
+| 2025/02/19 | Update `Amount` details in the create Sessions request                                                                                                                                                                                                                           |
 | 2025/02/19 | Add `paypal` to `source` in the `getPaymentDetails` response
 | 2025/02/17 | Fix broken references.
 | 2025/02/10 | Removed Bizum `mobile_number` from source object. Because, we are using customer object now. 
