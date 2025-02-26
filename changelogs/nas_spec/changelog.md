@@ -2,7 +2,9 @@
 
 | Date       | Description of change                                                                                                                                                                                                                                                            |
 |------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 2025/02/21 | Rename `01_PaymentRequestIndividualSender.yaml`: `dob` to `date_of_birth`
+| 2025/02/25 | Update `SessionsBillingDescriptor` max length                                                                                                                                                                                                                                    |
+| 2025/02/25 | Add `tamara` and `tabby` payment methods to Payment Sessions, Hosted Payments Page and Payment Links                                                                                                                                                                             |
+| 2025/02/21 | Rename `01_PaymentRequestIndividualSender.yaml`: `dob` to `date_of_birth`                                                                                                                                                                                                        |
 | 2025/02/19 | Update `Amount` details in the create Sessions request                                                                                                                                                                                                                           |
 | 2025/02/19 | Add `paypal` to `source` in the `getPaymentDetails` response
 | 2025/02/17 | Fix broken references.
