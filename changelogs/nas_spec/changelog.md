@@ -2,6 +2,7 @@
 
 | Date       | Description of change                                                                                                                                                                                                                                                            |
 |------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 2025/03/19 | Add `metadata` object to Payment Context POST request and GET response           
 | 2025/03/18 | Update `amount` field minimum for Hosted Payments Page                                                                                                                                                     |
 | 2025/03/18 | Add updated fields for `processing` on Payment Sessions, Hosted Payments Page and Payment Links                                                                                                                                                                             |
 | 2025/03/12 | Add `device` to `risk` in the `PaymentRequest` object
