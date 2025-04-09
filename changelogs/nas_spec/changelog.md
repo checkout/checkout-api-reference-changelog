@@ -2,6 +2,8 @@
 
 | Date       | Description of change                                                                                                                                                                                                                                                            |
 |------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 2025/04/08 | Update required characters for `account_holder.zip` and `account_holder.city` when creating SEPA instruments.
+| 2025/04/02 | Add support for including customer object on POST for ACH and SEPA instruments, as well as ACH and SEPA instrument payloads in response for GET customers
 | 2025/03/19 | Add `metadata` object to Payment Context POST request and GET response           
 | 2025/03/18 | Update `amount` field minimum for Hosted Payments Page                                                                                                                                                     |
 | 2025/03/18 | Add updated fields for `processing` on Payment Sessions, Hosted Payments Page and Payment Links                                                                                                                                                                             |
