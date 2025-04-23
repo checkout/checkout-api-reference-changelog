@@ -2,6 +2,7 @@
 
 | Date       | Description of change                                                                                                                                                                                                                                                            |
 |------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 2025/04/14 | Added 200 response from POST /instruments.
 | 2025/04/08 | Update required characters for `account_holder.zip` and `account_holder.city` when creating SEPA instruments.
 | 2025/04/02 | Add support for including customer object on POST for ACH and SEPA instruments, as well as ACH and SEPA instrument payloads in response for GET customers
 | 2025/03/19 | Add `metadata` object to Payment Context POST request and GET response           
