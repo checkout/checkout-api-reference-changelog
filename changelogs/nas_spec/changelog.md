@@ -2,6 +2,9 @@
 
 | Date       | Description of change                                                                                                                                                                                                                                                            |
 |------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 2025/04/29 | Add 3DS ECI to payment details 3DS object
+| 2025/04/25 | Add `vipps` and `mobilepay` to payment request and payment response source type
+| 2025/04/16 | Updated the regex pattern for dispute `id` fields. The dispute ID can now have 22 or 26 characters after the `dsp_` prefix.
 | 2025/04/14 | Added 200 response from POST /instruments.
 | 2025/04/08 | Update required characters for `account_holder.zip` and `account_holder.city` when creating SEPA instruments.
 | 2025/04/02 | Add support for including customer object on POST for ACH and SEPA instruments, as well as ACH and SEPA instrument payloads in response for GET customers
