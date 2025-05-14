@@ -2,6 +2,8 @@
 
 | Date       | Description of change                                                                                                                                                                                                                                                            |
 |------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 2025/05/08 | Add Submit Payment Session endpoint documentation
+| 2025/05/07 | Add QR and mobile redirect links to /payments 202 response
 | 2025/04/29 | Add 3DS ECI to payment details 3DS object
 | 2025/04/25 | Add `vipps` and `mobilepay` to payment request and payment response source type
 | 2025/04/16 | Updated the regex pattern for dispute `id` fields. The dispute ID can now have 22 or 26 characters after the `dsp_` prefix.
