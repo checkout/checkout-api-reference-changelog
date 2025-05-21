@@ -2,6 +2,8 @@
 
 | Date       | Description of change                                                                                                                                                                                                                                                            |
 |------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 2025/05/14 | Improve Submit Payment Session endpoint documentation |
+| 2025/05/08 | Add new fields for SEPA B2B functionality
 | 2025/05/08 | Add Submit Payment Session endpoint documentation
 | 2025/05/07 | Add QR and mobile redirect links to /payments 202 response
 | 2025/04/29 | Add 3DS ECI to payment details 3DS object
