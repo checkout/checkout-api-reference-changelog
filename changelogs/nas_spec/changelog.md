@@ -2,6 +2,7 @@
 
 | Date       | Description of change                                                                                                                                                                                                                                                            |
 |------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 2025/11/03 | Add `payment_type` and `summary` fields to Create Payment Session request, Hosted Payments Page request and Payment Links request added paynow and wechatpay to payment methods
 | 2025/10/27 | Add `remittance` object to `instruction`           
 | 2025/10/22 | Add `foreign_retailer_amount` field to capture processing request                                                                                                                                                               |
 | 2025/10/17 | Add external_applicant_name to applicants                                                                                                                                                                                                                                        |
