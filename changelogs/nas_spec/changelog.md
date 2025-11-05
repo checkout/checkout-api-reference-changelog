@@ -2,6 +2,7 @@
 
 | Date       | Description of change                                                                                                                                                                                                                                                            |
 |------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 2025/11/04 | Add new field `regulated_indicator` for `GET /instruments/{id}` only for card instruments                                                                                                                                                                                        |
 | 2025/11/03 | Add `payment_type` and `summary` fields to Create Payment Session request, Hosted Payments Page request and Payment Links request added paynow and wechatpay to payment methods
 | 2025/10/27 | Add `remittance` object to `instruction`           
 | 2025/10/22 | Add `foreign_retailer_amount` field to capture processing request                                                                                                                                                               |
