@@ -2,6 +2,7 @@
 
 | Date       | Description of change                                                                                                                                                                                                                                                            |
 |------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 2025/11/17 | Remove the `reference` query parameter from the Get financial actions request. |
 | 2025/11/05 | Add new `source.store_for_future_use` parameter and `source` object in the response of the Forward API's `POST /forward` endpoint.                                                                                                                                                        |
 | 2025/11/10 | Add new field  `card art uri` for network tokens response                                                                                                                                                                                                                        |
 | 2025/11/10 | Add new fields to card metadata response                                                                                                                                                                                                                                         |
