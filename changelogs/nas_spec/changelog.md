@@ -2,6 +2,7 @@
 
 | Date       | Description of change                                                                                                                                                                                                                                                            |
 |------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 2025/11/27 | Removes Agentic commerce APIs from public docs. |
 | 2025/11/26 | Add daily acquiring to Get FX rates. |
 | 2025/11/26 | Update affiliate id requirements for Card Payouts and Payins.                                                                                                                                                                                                                    |
 | 2025/11/25 | Fixing issuing use of ref and description                                                                                                                                                                                                                                        |
