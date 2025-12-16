@@ -2,6 +2,7 @@
 
 | Date       | Description of change                                                                                                                                                                                                                                                            |
 |------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 2025/12/16 | Add Forward API Secrets endpoints - Create, list, update, and delete secrets with forward:secrets OAuth scope |
 | 2025/12/15 | Add reference field to card metadata request                                                                                                                                                                                                                                     |
 | 2025/12/08 | Add new GooglePay Enablement API |
 | 2025/12/04 | Add card art example tlinks response                                                                                                                                                                                                                                             |
