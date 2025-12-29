@@ -2,6 +2,8 @@
 
 | Date       | Description of change                                                                                                                                                                                                                                                            |
 |------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 2025/12/29| Make `declared_data` optional in ID Document Verification API schema        
+
 | 2025/12/16 | Add `products[].url` to Hosted Payments Page and Payment Links request schemas                                                                                                                                                                                                   |
 | 2025/12/16 | Add Forward API Secrets endpoints - Create, list, update, and delete secrets with forward:secrets OAuth scope |
 | 2025/12/15 | Add reference field to card metadata request                                                                                                                                                                                                                                     |
