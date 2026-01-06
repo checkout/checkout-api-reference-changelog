@@ -2,6 +2,8 @@
 
 | Date       | Description of change                                                                                                                                                                                                                                                            |
 |------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 2026/01/06| Make `name` required for `SessionsBillingDescriptor`        
+
 | 2025/12/29| Make `declared_data` optional in ID Document Verification API schema        
 
 | 2025/12/16 | Add `products[].url` to Hosted Payments Page and Payment Links request schemas                                                                                                                                                                                                   |
