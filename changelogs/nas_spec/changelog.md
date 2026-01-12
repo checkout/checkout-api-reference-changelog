@@ -2,6 +2,10 @@
 
 | Date       | Description of change                                                                                                                                                                                                                                                            |
 |------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 2026/01/012 | Update card metadata response `scheme_metadata` description.  |
+| 2026/01/12 | Update `bin` length in card metadata response.  |
+| 2026/01/12 | Add `paypak` and `maestro` to card metadata response `local_schemes` enum.  |
+| 2026/01/12 | Add `is_combo_card` to card metadata response.  |
 | 2026/01/07 | Add `presentment_reversed` to the Issuing Dispute `reason_code` enum.  |
 | 2025/12/16 | Add `products[].url` to Hosted Payments Page and Payment Links request schemas  |
 | 2026/01/06| Make `name` required for `SessionsBillingDescriptor`        
