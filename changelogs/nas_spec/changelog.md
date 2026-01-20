@@ -2,7 +2,8 @@
 
 | Date       | Description of change                                                                                                                                                                                                                                                            |
 |------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 2026/01/012 | Update card metadata response `scheme_metadata` description.  |
+| 2026/01/14 | Add Shazam to Pinless/Fiserv |
+| 2026/01/12 | Update card metadata response `scheme_metadata` description.  |
 | 2026/01/12 | Update `bin` length in card metadata response.  |
 | 2026/01/12 | Add `paypak` and `maestro` to card metadata response `local_schemes` enum.  |
 | 2026/01/12 | Add `is_combo_card` to card metadata response.  |
