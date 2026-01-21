@@ -2,6 +2,7 @@
 
 | Date       | Description of change                                                                                                                                                                                                                                                            |
 |------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 2026/01/20 | Convert ECMAScript regex patterns to RE2 compatible format for phone number validation in platform schemas. Changed `^(?!0+$)[0-9]{8,16}$` to `^[1-9][0-9]{7,15}$` across 10 platform schema files to ensure compatibility with RE2 regex engine and avoid import/validation issues. |
 | 2026/01/14 | Add Shazam to Pinless/Fiserv |
 | 2026/01/12 | Update card metadata response `scheme_metadata` description.  |
 | 2026/01/12 | Update `bin` length in card metadata response.  |
@@ -9,7 +10,7 @@
 | 2026/01/12 | Add `is_combo_card` to card metadata response.  |
 | 2026/01/07 | Add `presentment_reversed` to the Issuing Dispute `reason_code` enum.  |
 | 2025/12/16 | Add `products[].url` to Hosted Payments Page and Payment Links request schemas  |
-| 2026/01/06| Make `name` required for `SessionsBillingDescriptor`        
+| 2026/01/06 | Make `name` required for `SessionsBillingDescriptor`        
 
 | 2025/12/29| Make `declared_data` optional in ID Document Verification API schema        
 
