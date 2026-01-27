@@ -2,6 +2,7 @@
 
 | Date       | Description of change                                                                                                                                                                                                                                                            |
 |------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 2026/01/22 | Remove option_id and options from Payment Setup |
 | 2026/01/20 | Convert ECMAScript regex patterns to RE2 compatible format for phone number validation in platform schemas. Changed `^(?!0+$)[0-9]{8,16}$` to `^[1-9][0-9]{7,15}$` across 10 platform schema files to ensure compatibility with RE2 regex engine and avoid import/validation issues. |
 | 2026/01/14 | Add Shazam to Pinless/Fiserv |
 | 2026/01/12 | Update card metadata response `scheme_metadata` description.  |
