@@ -3,8 +3,10 @@
 | Date       | Description of change                                                                                                                                                                                                                                                            |
 |------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|| 2026/02/04 | Add compliance-requests controller                                                                                                                                                                                                                                                   |
 |------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 2026/03/03 | Adding aggregator details and reconciliation_id to payment request and respone                                                                                                                                                                                                       |
+| 2026/03/03 | Adding aggregator details and reconciliation_id to payment request and respone |
+| 2026/02/02 | Add new success_url, failure_url, billing_descriptor and payment_method_configuration fields to submit endpoint documentation for Flow section |
 | 2026/01/30 | Add `property_phone` and `customer_service_phone` to AccommodationData |
+| 2026/01/29 | Update 3ds documentation for Flow section |
 | 2026/01/22 | Remove option_id and options from Payment Setup |
 | 2026/01/20 | Convert ECMAScript regex patterns to RE2 compatible format for phone number validation in platform schemas. Changed `^(?!0+$)[0-9]{8,16}$` to `^[1-9][0-9]{7,15}$` across 10 platform schema files to ensure compatibility with RE2 regex engine and avoid import/validation issues. |
 | 2026/01/19 | Update `klarna` get payment response with account_holder data.  |
