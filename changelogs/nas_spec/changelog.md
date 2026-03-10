@@ -5,6 +5,7 @@
 |------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 2026/03/03 | Adding aggregator details and reconciliation_id to payment request and respone |
 | 2026/02/16 | Add new capture, capture_on, instruction, sender and recipient fields to submit endpoint documentation for Flow section |
+| 2026/02/11 | Adding aggregator details and reconciliation_id to Flow Payment Session and Payment Session with Payment requests |
 | 2026/02/02 | Add new success_url, failure_url, billing_descriptor and payment_method_configuration fields to submit endpoint documentation for Flow section |
 | 2026/01/30 | Add `property_phone` and `customer_service_phone` to AccommodationData |
 | 2026/01/29 | Update 3ds documentation for Flow section |
