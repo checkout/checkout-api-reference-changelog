@@ -2,6 +2,7 @@
 
 | Date       | Description of change                                                                                                                                                                                                                                                                |
 |------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 2026/04/08 | Add supported payment methods to Payment Setup             |
 | 2026/03/27 | Add new currency field to submit endpoint documentation for Flow section                                                                                                                                                     |
 | 2026/03/24 | Add `paypal` to Payment Setup.                                                                                                                                                                                                                                                      |
 | 2026/03/19 | Add new billing, shipping, metadata, customer and processing_channel_id fields to submit endpoint documentation for Flow section                                                                                                                                                     |
