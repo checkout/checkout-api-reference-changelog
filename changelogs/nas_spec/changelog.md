@@ -2,6 +2,7 @@
 
 | Date       | Description of change                                                                                                                                                                                                                                                                |
 |------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 2026/04/15 | Removes deprecated endpoint and fields in Issuing API
 | 2026/04/08 | Add supported payment methods to Payment Setup             |
 | 2026/03/27 | Add new currency field to submit endpoint documentation for Flow section                                                                                                                                                     |
 | 2026/03/24 | Add `paypal` to Payment Setup.                                                                                                                                                                                                                                                      |
