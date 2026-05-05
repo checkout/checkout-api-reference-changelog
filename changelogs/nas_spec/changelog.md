@@ -2,6 +2,8 @@
 
 | Date       | Description of change                                                                                                                                                                                                                                                                |
 |------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 2026/05/04 | Add `processing.affiliate_id` and `processing.affiliate_url` to Flow Payment Session and Payment Session with Payment requests |
+
 | 2026/04/28 | Add `device_information` to Standalone Authentication - Request a session                                                                                                                                                                                                            |
 | 2026/04/20 | Add `fallback_source` and `fallback_source_used` to payments request/response and GET response                                                                                                                                                                                       |
 | 2026/04/15 | Removes deprecated endpoint and fields in Issuing API                                                                                                                                                                                                                                
