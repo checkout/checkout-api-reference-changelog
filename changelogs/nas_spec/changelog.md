@@ -2,6 +2,7 @@
 
 | Date       | Description of change                                                                                                                                                                                                                                                                |
 |------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 2026/05/05 | Add `processing.payment_reference` and `processing.service_supplier_id` to POST /payments (Pending) response for Multibanco payments |
 | 2026/05/04 | Add `processing.affiliate_id` and `processing.affiliate_url` to Flow Payment Session and Payment Session with Payment requests |
 | 2026/04/30 | Add `balancesAt` query parameter and `collateral_breakdown` response object to Get Entity Balances. Document existing `currency_account_id` and `balances_as_of` response fields.                                                                                                    |
 | 2026/04/28 | Add `device_information` to Standalone Authentication - Request a session                                                                                                                                                                                                            |
